@@ -17,7 +17,7 @@
                 John Paul
             </div>
             <nav class="rightnav">
-                <ul class="nav-links">
+                <ul class="nav-links" id="menuItems">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -25,6 +25,12 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Close & open button -->
+            <div class="menu-icon" onclick="menuToggle()">
+                <img class="hamburger-img" src="images/hamburger-icon.svg" alt="hamburger" width="25px">
+                <img class="cross-img" src="images/crosss-icon.jpg" alt="close" width="22px">
+            </div>
         </div>
         <!-- Hero Section -->
         <div class="hero">
@@ -59,7 +65,25 @@
             </div>
         </div>
     </div>
+<!-- javascript -->
+    <script>
+        var MenuItems = document.getElementById("menuItems");
+        var hamburgerImg = document.querySelector(".hamburger-img");
+        var crossImg = document.querySelector(".cross-img");
 
+        MenuItems.style.maxHeight = "0px";
 
+        function menuToggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+                hamburgerImg.style.display ="none";
+                crossImg.style.display = "inline-block"
+            } else {
+                MenuItems.style.maxHeight = "0px";
+                hamburgerImg.style.display ="inline-block";
+                crossImg.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>

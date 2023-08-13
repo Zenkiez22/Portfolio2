@@ -285,4 +285,88 @@ nav ul li:after {
         position: static;
     }
 
+
+    .skills ul {
+        justify-content: center;
+        margin-top: 3.3rem;
+    }
+}
+
+/* Responsive header */
+
+.menu-icon,
+.cross-img {
+    display: none;
+}
+
+@media (max-width: 775px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: var(--text-color);
+        width: 100%;
+        z-index: 1;
+        overflow: hidden;
+        transition: all 0.7s;
+    }
+
+    nav ul li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li a {
+        color: var(--bg-color)
+    }
+
+    .hero .hero-image img {
+        width: 250px;
+        height: 250px;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .buttons button {
+        padding: 5px 8px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .hero .hero-image img {
+        width: 180px;
+        height: 180px;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .hero-text h1 {
+        font-size: 0.7rem;
+
+    }
+
+    .buttons .btn2 {
+        margin: 0px;
+    }
+
+    .skills ul {
+        gap: 3rem;
+    }
+
+    .skills ul li img {
+        width: 25px;
+        height: auto;
+    }
 }
