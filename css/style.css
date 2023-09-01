@@ -15,7 +15,7 @@
     --para-color: #9c9c9c;
     --main-color: #00eeff;
     --light-color: #0ec3fa;
-    --extra-light: #04e8f8;
+    --extra-light: #00eeff;
 }
 
 /* Back ground color */
@@ -154,7 +154,7 @@ nav ul li:after {
     border: 3px solid white;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     position: relative;
-    box-shadow: 0 0 35px rgba(213, 121, 255, 0.67);
+    box-shadow: 0 0 35px rgba(1, 181, 252, 0.67);
     animation: animate123 8s ease-in-out infinite;
 }
 
