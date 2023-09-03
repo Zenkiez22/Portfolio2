@@ -4,90 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="html, css with javascript only">
-    <title>Personal Portfolio - John Paul</title>
+    <title>My Personal Portfolio || John Paul</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- fontawesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     
 
 </head>
 <body>
-
-    <!-- Main Section-->
-  
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                John Paul
-            </div>
-            <nav class="rightnav">
-                <ul class="nav-links" id="menuItems">
-                    <li><a href="#">Home</a></li>
+    <!-- Header Section-->
+        <header>
+            <div class="logo"><span>John</span>Paul.</div>
+                <ul class="navlist">
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            <div id="menu-icon" class="bx bx-menu"></div>
+        </header>
+    <!-- Header Section -->
 
-            <!-- Close & open button -->
-            <div class="menu-icon" onclick="menuToggle()">
-                <img class="hamburger-img" src="images/hamburger-icon.svg" alt="hamburger" width="25px">
-                <img class="cross-img" src="images/crosss-icon.jpg" alt="close" width="22px">
-            </div>
-        </div>
-        <!-- Hero Section -->
-        <div class="hero">
-            <div class="content">
-                <div class="hero-main">
-                    <div class="hero-text">
-                        <h2>Hello, I am John Paul</h2>
-                        <h1>Fullstack Web Developer, UI / UX Designer</h1>
-                        <p>Im a Fullstack Web Developer based who really loves code, simple & unique design. i also enjoy creating a website, such as ordering website or E-commerce website</p>
 
-                        <div class="buttons">
-                            <button class="btn1">Download CV</button>
-                            <button class="btn2">Contact Me</button>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <img src="images/hero-profile.jpg" alt="hero-profile">
-                    </div>
+    <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>Hi ! I'm John Paul</h1>
+                <div class="change-text">
+                    <h3>And I'm</h3>
+                    <h3>
+                        <span class="word">Fullstack Web Developer</span>
+                        <span class="word">UX / UI Designer</span>
+                        <span class="word">Freelancer</span>
+                    </h3>
                 </div>
-                <div class="skills">
-                    <p>Tech Skills</p>
-                    <div class="logos">
-                        <ul>
-                            <li><img src="images/html5-logo.png"alt="html5"></li>
-                            <li><img src="images/css-logo.png"alt="css"></li>
-                            <li><img src="images/Javascript-logo.png"alt="javascript"></li>
-                            <li><img src="images/Bootstrap5-logo.png"alt="bootstrap"></li>
-                            <li><img src="images/reactjs-logo.png"alt="reactjs"></li>
-                        </ul>
+      
+                <p>Im a Fullstack Web Developer based who really loves code, simple & unique design. i also enjoy creating a website, such as ordering website or E-commerce website</p> 
+
+                <div class="info-box">
+                    <div class="email-info">
+                       <h5>Personal Email :</h5>
+                       <span>Baluyotjohnpaul022296@gmail.com</span> 
                     </div>
+                    <div class="email-info">
+                        <h5>Business Email :</h5>
+                        <span>Johnpaul@kodingensayo.com</span> 
+                     </div>
+                </div>
+
+                <div class="btn-box">
+                  <a href="#" class="btn">Download CV</a>
+                  <a href="#" class="btn">Contact Me</a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"> <i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"> <i class='bx bxl-github'></i></a>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <div class="home-image">
+                <div class="img-box">
+                    <img src="images/hero-profile.jpg" alt="hero-profile">
+
+                </div>
+            </div>
+        </section>
+
+     <!-- End Home Section -->
 <!-- javascript -->
-    <script>
-        var MenuItems = document.getElementById("menuItems");
-        var hamburgerImg = document.querySelector(".hamburger-img");
-        var crossImg = document.querySelector(".cross-img");
-
-        MenuItems.style.maxHeight = "0px";
-
-        function menuToggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
-                hamburgerImg.style.display ="none";
-                crossImg.style.display = "inline-block"
-            } else {
-                MenuItems.style.maxHeight = "0px";
-                hamburgerImg.style.display ="inline-block";
-                crossImg.style.display = "none"
-            }
-        }
-    </script>
+<script src="script.js"></script>
 </body>
+
 </html>
