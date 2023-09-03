@@ -190,7 +190,7 @@ section {
     margin: 1rem 0 2rem;
 }
 
-.info-box h5 {
+.info-box h4 {
     font-weight: 600;
     color: var(--text-color);
     font-size: 1rem;
