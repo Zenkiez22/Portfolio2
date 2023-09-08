@@ -1,5 +1,4 @@
 const text = document.querySelector(".seco-text");
-
 const textLoad = () => {
     setTimeout(() => {
         text.textContent = "Fullstack Web Developer";
@@ -14,3 +13,5 @@ const textLoad = () => {
 
 textLoad();
 setInterval(textLoad, 12000);
+
+
