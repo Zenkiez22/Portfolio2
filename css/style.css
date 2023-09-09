@@ -11,12 +11,12 @@
 
 :root {
     --text-color: #f5f5f5;
-    --hover-color: #12f7ff;
-    --bg-color: #1e1e20;
+    --hover-color: #A67CED;
+    --bg-color: #13061F;
     --second-bg-color: #2A2E33;
     --big-font: 2.5rem;
     --normal-font: 2rem;
-    --neon-box-shadow: 0 0 .5rem #12f7ff;
+    --neon-box-shadow: 0 0 .5rem #A67CED;
     --h2-font: 3rem;
     --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
         0 0 20px rgba(18, 247, 255, 0.3),
@@ -67,14 +67,10 @@ span {
 
 .navlist a:hover {
     color: var(--hover-color);
-    text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
-        0 0 20px rgba(18, 247, 255, 0.6),
-        0 0 30px rgba(18, 247, 255, 0.6),
-        0 0 40px rgba(18, 247, 255, 0.6),
-        0 0 70px rgba(18, 247, 255, 0.6),
-        0 0 80px rgba(18, 247, 255, 0.6),
-        0 0 100px rgba(18, 247, 255, 0.6),
-        0 0 150px rgba(18, 247, 255, 0.6);
+}
+
+.navlist a.active {
+    color: var(--hover-color);
 }
 
 #menu-icon {
@@ -110,7 +106,7 @@ section {
     border: 3px solid white;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     position: relative;
-    box-shadow: 0 0 35px rgba(1, 181, 252, 0.67);
+    box-shadow: 0 0 35px rgba(129, 12, 207, 0.67);
     animation: animate123 8s ease-in-out infinite;
 }
 
@@ -281,7 +277,8 @@ a.btn:nth-child(2)::before {
     color: var(--hover-color);
     border: 2px solid var(--hover-color);
     transition: .6s;
-    box-shadow: 0 0 0.3rem #12f7ff;
+    box-shadow: 0 0 35px rgba(129, 12, 207, 0.67);
+
     border-radius: 5px;
     position: relative;
     z-index: 1;
@@ -371,12 +368,15 @@ a.btn:nth-child(2)::before {
     font-weight: 600;
     font-size: 1.5rem;
     margin-bottom: .2rem;
+    letter-spacing: 1px;
+    color: var(--text-color);
 }
 
 .about-content p {
-    color: #fdfdfd;
+    color: #bdbdbd;
     font-weight: 300;
     margin-bottom: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .info-about1,
@@ -505,6 +505,7 @@ a.btn:nth-child(2)::before {
     padding: .5rem;
     margin-bottom: 2rem;
     letter-spacing: 1px;
+
 }
 
 
@@ -513,18 +514,20 @@ a.btn:nth-child(2)::before {
     padding: 12px 15px;
     border-radius: 5px;
     border: none;
-    font-weight: 500;
-    color: #000;
+    font-weight: 700;
+    color: var(--text-color);
     box-shadow: rgba(60, 64, 67, 0.3)0px 1px 2px 0,
         rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
     margin-right: .5rem;
     cursor: pointer;
     transition: all .3s ease;
+    letter-spacing: 1px;
+
 }
 
-.filter-buttons .btn:hover,
+.filter-buttons .buttons:hover,
 button.mixitup-control-active {
-    background: var(--gradient-color-bg);
+    background: var(--hover-color);
     color: #fff;
 }
 
@@ -572,7 +575,15 @@ button.mixitup-control-active {
 .portfolio-content a.readMore {
     padding: 8px 12px;
     font-size: .8rem;
+    border-radius: 5px;
 }
+
+.portfolio-content .a:hover {
+    background: var(--second-bg-color);
+    transition: transform.4s;
+    border-radius: 10px;
+}
+
 
 .portfolio-content p {
     font-size: .9rem;
@@ -587,6 +598,12 @@ button.mixitup-control-active {
 }
 
 
+
+footer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 /* Keyframes */
 @keyframes morph {
@@ -610,3 +627,74 @@ button.mixitup-control-active {
 
     }
 }
+
+/* contact */
+
+/* ==================== Contact section css code ============================ */
+
+.contactSkills {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-info,
+.skills {
+    width: 100%;
+    background: var(--second-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+
+.contact-info input,
+.contact-info form textarea {
+    width: 100%;
+}
+
+.contact-info form input,
+.contact-info form textarea {
+    /* width: 100%; */
+    padding: .8rem;
+    border: 2px solid #e8e1e1;
+    margin: .5rem 0;
+    background: #e8f1f9;
+    border-radius: 5px;
+    outline: none;
+    transition: .3s;
+}
+
+.contact-info form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box input {
+    width: 49%;
+}
+
+form input:focus,
+form textarea:focus {
+    filter: brightness(100%);
+    background: #d2e9ff;
+    border: 2px solid #f8caca;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .button {
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+    background: var(--hover-color);
+    color: var(--bg-color);
+}
+
+form .button:hover {
+    background-color: #2A2E33;
+}
+
+/* skill section */
