@@ -7,6 +7,10 @@
     <title>My Personal Portfolio || John Paul</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Bootstrap cdn link -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
 
     
 
@@ -16,7 +20,7 @@
      <header>
             <div class="logo"><span>John</span>Paul.</div>
                 <ul class="navlist">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" scrollto="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -52,7 +56,7 @@
                 </div>
 
                 <div class="btn-box">
-                  <a href="#download" class="btn">Download CV</a>
+                  <a href="#download" class="btn" onClick="window.open('./cvresume/John Paul Baluyot CV Resume.pdf')">Download CV</a>
                   <a href="#contactme" class="btn">Contact Me</a>
                 </div>
 
@@ -74,7 +78,7 @@
 
 
      <!-- About Section -->
-     <Section id="about" class="about">
+     <section id="about" class="about">
             <div class="img-about">
                 <img src="images/hero-profile.jpg" alt="hero-profile" height="350px" width="350px">
                 <!-- <div class="info-about1">
@@ -92,48 +96,50 @@
             </div>
 
             <div class="about-content">
-                <span>Let me introduce myself</span>
+                <span>Get to know more</span>
                 <h2>About Me</h2>
-                <h3>A Story of good</h3>
+                <h3>Being a Web Developer</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat consectetur vitae mollitia totam ex ipsa? Rem, quisquam officia. Debitis a deleniti odio iste eum, delectus rem officiis, aut quod esse accusantium necessitatibus. Voluptatum veritatis minus reprehenderit ea, saepe quasi?</p>
 
                 <div class="btn-box">
                     <a href="#" class="btn" aria-label="learn more!">learn more!</a>
                 </div>
             </div>
-     </Section>
+     </section>
      <!-- End About Section -->
 
 
      <!-- Service Section -->
-     <Section id="services" class="services">
+     <section id="services" class="services">
         <div class="main-text">
             <span>What i will do for you</span>
             <h2>My Services</h2>
         </div>
 
         <div class="section-services">
-            <div class="service-box">
+            <!-- <div class="service-box">
                 <i class='bx bxs-layer service-icon'></i>
                 <h3>Application Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt consequatur sunt voluptatum labore ab illo nulla ad, architecto inventore?</p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
                 </div>
-            </div>
+            </div> -->
 
+            
             <div class="service-box">
-                <i class='bx bx-desktop service-icon'></i>
-                <h3>UX / UI Design</h3>
+                <i class='bx bx-code-alt service-icon'></i>
+                <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt consequatur sunt voluptatum labore ab illo nulla ad, architecto inventore?</p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
                 </div>
             </div>
 
+
             <div class="service-box">
-                <i class='bx bx-code-alt service-icon'></i>
-                <h3>Web Development</h3>
+                <i class='bx bx-desktop service-icon'></i>
+                <h3>UX / UI Design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt consequatur sunt voluptatum labore ab illo nulla ad, architecto inventore?</p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
@@ -149,96 +155,70 @@
                 </div>
             </div>
         </div>
-     </Section>
+     </section>
      <!-- End Service Section -->
 
      <!-- Portfolio Section -->
-     <section class="portfolio" class="portfolio">
-    <div class="main-text">
-        <h2 class="heading">My Projects</h2>
-        <span>what i will do for you</span>
-    </div>
-    <div class="filter-buttons">
-        <button class="button mixitup-control-active" data-filter="all">All Work</button>
-        <button class="button" data-filter=".web">Web Development</button>
-        <button class="button" data-filter=".uiux">UI/UX Design</button>
-        <button class="button" data-filter=".branding">Branding Design</button>
-    </div>
+     <article class="portfolio" class="portfolio">
+            <div class="main-text">
+                <h2 class="heading">Portfolio</h2>
+                <span>Browse my recent Projects</span>
+            </div>
 
-    <div class="portfolio-gallery">
-        <div class="portfolio-box mix uiux">
-            <div class="portfolio-content">
-                <h3>UI/UX Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                <a href="#" class="readMore">Explore More</a>
-            </div>
-            <div class="portfolio-img">
-                <img src="images/hero-profile.jpg" alt=".web">
-            </div>
-        </div>
+            <figure class="project-card">
+                <img src="images/html5-logo.jpg" alt="Project Title 1">
+                <figcaption>
+                    <h2>Project Title 1</h2>
+                    <p>Project description goes here. You can provide details about the technologies used, your role, and any other relevant information.</p>
+                    
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">View</a>
+                    </div>
+                
+                </figcaption>
+            </figure>
 
-        <div class="portfolio-box mix web">
-            <div class="portfolio-content">
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                <a href="#" class="readMore">Explore More</a>
-            </div>
-            <div class="portfolio-img">
-                <img src="images/hero-profile.jpg" alt=".uiux">
-            </div>
-        </div>
+            <figure class="project-card">
+                <img src="images/html5-logo.jpg" alt="Project Title 2">
+                <figcaption>
+                    <h2>Project Title 2</h2>
+                    <p>Project description goes here. You can provide details about the technologies used, your role, and any other relevant information.</p>
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">View</a>
+                    </div>
+                </figcaption>
+            </figure>
 
-        <div class="portfolio-box mix web">
-            <div class="portfolio-content">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                <a href="#" class="readMore">Explore More</a>
-            </div>
-            <div class="portfolio-img">
-                <img src="images/hero-profile.jpg" alt="">
-            </div>
-        </div>
+            <figure class="project-card">
+                <img src="images/html5-logo.jpg" alt="Project Title 1">
+                <figcaption>
+                    <h2>Project Title 3</h2>
+                    <p>Project description goes here. You can provide details about the technologies used, your role, and any other relevant information.</p>
+                    
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">View</a>
+                    </div>
+                
+                </figcaption>
+            </figure>
 
-
-        <div class="portfolio-box mix web">
-            <div class="portfolio-content">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                <a href="#" class="readMore">Explore More</a>
-            </div>
-            <div class="portfolio-img">
-                <img src="images/hero-profile.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="portfolio-box mix uiux">
-            <div class="portfolio-content">
-                <h3>UI/UX Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                <a href="#" class="readMore">Explore More</a>
-            </div>
-            <div class="portfolio-img">
-                <img src="images/hero-profile.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="portfolio-box mix branding">
-            <div class="portfolio-content">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                <a href="#" class="readMore">Explore More</a>
-            </div>
-            <div class="portfolio-img">
-                <img src="images/hero-profile.jpg" alt="">
-            </div>
-        </div>
-    </div>
-
-     </section>
+            <figure class="project-card">
+                <img src="images/html5-logo.jpg" alt="Project Title 1">
+                <figcaption>
+                    <h2>Project Title 4</h2>
+                    <p>Project description goes here. You can provide details about the technologies used, your role, and any other relevant information.</p>
+                    
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">View</a>
+                    </div>
+                
+                </figcaption>
+            </figure> 
+     </article>
      <!-- End Portfolio Section -->
 
      <!-- Contact us Section -->
-     <section class="down-box" id="contact">
+    <section class="down-box" id="contact">
         <div class="contactSkills">
             <div class="contact-info">
                 <div class="main-text">
@@ -255,7 +235,7 @@
                     <textarea name="#" id="" cols="30" rows="10">
                     </textarea>
                     <div class="formBtn">
-                        <button type="submit" class="button">Send Message</button>
+                        <button type="submit" class="submit">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -365,9 +345,27 @@
 
 
      <footer>
-    <p>Copyright © 2023 by <span>John Paul</span> || All Right Reserved.</p>
-     </footer> 
+
+            <p>Copyright © 2023 by <span>John Paul</span> || All Right Reserved.</p>
+           
+     <!-- Back to top -->
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </footer> 
+
+
+
+
 <!-- javascript -->
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>
 </body>
 
