@@ -801,6 +801,10 @@ footer a i {
     .social-icons {
         margin-top: 2rem;
     }
+
+    footer p {
+        font-size: .8rem;
+    }
 }
 
 @media(max-width: 768px) {
@@ -857,5 +861,21 @@ footer a i {
 
     .skill-wrap {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:420px) {
+    html {
+        font-size: 80%;
+    }
+
+    footer p {
+        font-size: .6rem;
+    }
+
+    .img-about img {
+        max-width: 100%;
+        height: auto;
+        width: 300px;
     }
 }
