@@ -55,13 +55,14 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    width: 100%;
+    padding: 20px 10%;
+    z-index: 100;
+
     border-bottom: 1px solid transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 20px 10%;
 }
 
 header.sticky {
@@ -506,6 +507,13 @@ article {
     text-align: center;
 }
 
+.portfolio,
+.project-card {
+    justify-content: center;
+    text-align: center;
+
+}
+
 /* Style for the project cards */
 .project-card {
     display: inline-block;
@@ -713,6 +721,30 @@ footer a i {
 }
 
 
+/* Parallax */
+.scroll-scale {
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+
+.scroll-bottom {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+
+.scroll-top {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+
+.show-items {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 
 
@@ -874,8 +906,16 @@ footer a i {
     }
 
     .img-about img {
-        max-width: 100%;
-        height: auto;
         width: 300px;
+    }
+
+    .info-about1,
+    .info-about2,
+    .info-about3 {
+        display: none;
+    }
+
+    .img-about p {
+        font-size: 1rem;
     }
 }

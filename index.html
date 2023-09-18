@@ -20,7 +20,7 @@
      <header>
             <div class="logo"><span>John</span>Paul.</div>
                 <ul class="navlist">
-                    <li><a href="#home" scrollto="#home">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -33,7 +33,7 @@
 
      <!-- Home Section -->
      <section id="home" class="home">
-            <div class="home-content">
+            <div class="home-content scroll-scale">
                 <h1>Hi ! I'm John Paul</h1>
                 <div class="change-text">
                     <h2>
@@ -68,8 +68,8 @@
                 </div>
             </div>
 
-            <div class="home-image">
-                <div class="img-box">
+            <div class="home-image scroll-scale ">
+                <div class="img-box ">
                     <img src="images/hero-profile.jpg" alt="hero-profile" height="350px" width="350px">
                 </div>
             </div>
@@ -79,8 +79,8 @@
 
      <!-- About Section -->
      <section id="about" class="about">
-            <div class="img-about">
-                <img src="images/hero-profile.jpg" alt="hero-profile" height="350px" width="350px">
+            <div class="img-about scroll-scale">
+                <img src="images/hero-profile.jpg" alt="hero-profile">
                 <!-- <div class="info-about1">
                     <span>9</span>
                     <p>Months of Experience</p>
@@ -99,7 +99,7 @@
                 <span>Get to know more</span>
                 <h2>About Me</h2>
                 <h3>Being a Web Developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat consectetur vitae mollitia totam ex ipsa? Rem, quisquam officia. Debitis a deleniti odio iste eum, delectus rem officiis, aut quod esse accusantium necessitatibus. Voluptatum veritatis minus reprehenderit ea, saepe quasi?</p>
+                <p>I am John Paul, a passionate web developer and freelancer from Rodriguez Rizal, Philippines, Bringing you a programming and design from the future. My expertise is developing Websites and E-commerce including full frontend design , and knowledgeable in SEO.</p>
 
                 <div class="btn-box">
                     <a href="#" class="btn" aria-label="learn more!">learn more!</a>
@@ -111,12 +111,12 @@
 
      <!-- Service Section -->
      <section id="services" class="services">
-        <div class="main-text">
+        <div class="main-text scroll-scale">
             <span>What i will do for you</span>
             <h2>My Services</h2>
         </div>
 
-        <div class="section-services">
+        <div class="section-services scroll-bottom">
             <!-- <div class="service-box">
                 <i class='bx bxs-layer service-icon'></i>
                 <h3>Application Development</h3>
@@ -130,7 +130,7 @@
             <div class="service-box">
                 <i class='bx bx-code-alt service-icon'></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt consequatur sunt voluptatum labore ab illo nulla ad, architecto inventore?</p>
+                <p>refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
                 </div>
@@ -140,7 +140,7 @@
             <div class="service-box">
                 <i class='bx bx-desktop service-icon'></i>
                 <h3>UX / UI Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt consequatur sunt voluptatum labore ab illo nulla ad, architecto inventore?</p>
+                <p>Experience A UX is the interaction of users with the company’s product or services. The design of UX is focused on delivering meaningful and enjoyable experiences to users. A better user experience is often encouraged by layout, responsiveness, page load, and more.</p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
                 </div>
@@ -159,11 +159,22 @@
      <!-- End Service Section -->
 
      <!-- Portfolio Section -->
-     <article class="portfolio" class="portfolio">
-            <div class="main-text">
+     <section class="portfolio">
+            <div class="main-text scroll-scale">
                 <h2 class="heading">Portfolio</h2>
                 <span>Browse my recent Projects</span>
             </div>
+<!-- 
+            <div class="container">
+                <div class="filter-buttons scroll-scale">
+                    <button class="btn" data-filter="all"> All</button>
+                    <button class="btn" data-filter=".product"> Product</button>
+                    <button class="btn" data-filter=".inter"> Interacting</button>
+                    <button class="btn" data-filter=".web"> </button>
+
+                </div>
+
+            </div> -->
 
             <figure class="project-card">
                 <img src="images/html5-logo.jpg" alt="Project Title 1">
@@ -214,26 +225,26 @@
                 
                 </figcaption>
             </figure> 
-     </article>
+     </section>
      <!-- End Portfolio Section -->
 
      <!-- Contact us Section -->
     <section class="down-box" id="contact">
         <div class="contactSkills">
             <div class="contact-info">
-                <div class="main-text">
+                <div class="main-text scroll-scale">
                     <h2 class="heading">Contact Me</h2>
                     <span>get in touch with me</span>
                 </div>
-                <form action="#">
+                <form action="#" class="scroll-bottom">
                     <div class="input-box">
                         <input type="text" placeholder="First Name">
                         <input type="text" placeholder="Last Name">
                     </div>
                     <input type="email" placeholder="Email">
                     <input type="text" placeholder="Subject">
-                    <textarea name="#" id="" cols="30" rows="10">
-                    </textarea>
+                    <!-- <textarea name="#" id="" cols="30" rows="10">
+                    </textarea> -->
                     <div class="formBtn">
                         <button type="submit" class="submit">Send Message</button>
                     </div>
@@ -242,11 +253,11 @@
             <div class="skills">
                 <div class="container">
                     <div class="skillBox">
-                        <div class="main-text">
+                        <div class="main-text scroll-scale">
                             <h2 class="heading">My Skills</h2>
                             <span>Let Me Help you</span>
                         </div>
-                        <div class="skill-wrap">
+                        <div class="skill-wrap scroll-scale">
                             <div class="skill">
                                 <!-- <div class="outer-circle">
                                     <div class="inner-circle">
